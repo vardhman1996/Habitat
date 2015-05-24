@@ -6,6 +6,7 @@ var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
 var mongoose = require('mongoose');
 
+var habit = require('./routes/habit');
 var routes = require('./routes/index');
 var users = require('./routes/users');
 
@@ -13,7 +14,7 @@ var app = express();
 
 var port = 8080;
 
-mongoose.connect('mongodb://127.0.0.1/habitat');
+mongoose.connect('mongodb://127.0.0.1/habitatNew');
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
